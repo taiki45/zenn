@@ -1,0 +1,9 @@
+title: "実用Rust"
+summary: "実世界のRustアプリケーションを効率良く開発するための実用的な知見集"
+topics: ["rust"]
+published: false
+price: 0
+toc_depth: 1
+chapters:
+  - intro
+  - error_handling
