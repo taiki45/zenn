@@ -1,0 +1,27 @@
+title: "実用Rustアプリケーション開発"
+summary: |
+  実世界のRustアプリケーションを効率良く開発するための実用的な知見集
+
+  仕事などで実世界のRustアプリケーションを書く時に実用的な知見やtipsがまとまっていたらいいなと思ったことはありませんか？
+
+  この本では、アプリケーションを書く時に悩むポイントや便利crateを素早くアプリケーションに組み込む際のポイントを紹介します。本の内容をスリムにするため、自分が学び始める前に知りたかったものに絞りつつ要所を紹介・解説します。Rustの言語仕様のメジャーどころやよく利用されているcrateはドキュメントが豊富なので、わからないところや詳しく知りたい部分はドキュメントを読んだりLLMに聞いてみたりしてください。
+
+  想定読者: "The Rust Programming Language" の要所を読み終えたくらいのこれからRustでアプリケーションコードを書いていく、または今まさにアプリケーションコードを書きながらRustを学んでいる方。
+topics: ["rust"]
+published: false
+price: 0
+toc_depth: 1
+chapters:
+  - intro
+  - error_handling
+  - iterator
+  - interchangeability
+  - async
+  - memory_containers # after "async"
+  - tracing
+  - serde
+  - clap
+  - testing
+  - reqwest
+  - tower_http
+  - release
