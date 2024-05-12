@@ -8,7 +8,7 @@ summary: |
 
   想定読者: "The Rust Programming Language" の要所を読み終えたくらいのこれからRustでアプリケーションコードを書いていく、または今まさにアプリケーションコードを書きながらRustを学んでいる方。
 topics: ["rust"]
-published: false
+published: true
 price: 0
 toc_depth: 1
 chapters:
