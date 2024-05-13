@@ -163,6 +163,34 @@ https://docs.rs/tracing/latest/tracing/struct.Span.html#in-asynchronous-code
 
 https://docs.rs/tracing/latest/tracing/trait.Instrument.html
 
+```rust
+let mut cmd = self.build_command(&cloned.path, req, &token)?;
+let span =
+    info_span!("run command", command = fmt_cmd(&cmd), path = %cloned.path.display());
+// To instrument the command execution, wrap with async block.
+async move {
+    info!("running command");
+    let out = cmd
+        .output()
+        .await
+        .with_context(|| format!("failed to run command: {}", fmt_cmd(&cmd)))?;
+    let stdout = String::from_utf8_lossy(&out.stdout);
+    let stderr = String::from_utf8_lossy(&out.stderr);
+
+    if out.status.success() {
+        self.report_success(owner, repo, &check_run, input, &cmd, &stdout, &stderr)
+            .await?;
+    } else {
+        self.report_failure(owner, repo, &check_run, input, &cmd, &stdout, &stderr, &out)
+            .await?;
+    }
+
+    anyhow::Ok::<()>(())
+}
+.instrument(span)
+.await?;
+```
+
 ## 他の `Subscriber`
 ここにリストがあります。`Subscriber` 以外にも他のcrateとのインテグレーションを提供するようなcrateもあります。
 
