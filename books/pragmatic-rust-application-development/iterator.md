@@ -91,9 +91,9 @@ https://doc.rust-lang.org/std/option/enum.Option.html#impl-IntoIterator-for-Opti
  `Option<Vec<T>>` と `Option<T>` を繋げたい時にパターンマッチで取り出すのではなく、`flatten`, `chain`, `extend` とかで操作できて見通しがよくなります。抽象のパワー！
 
 ## 余談: `Option::transpose`
-`Option` な値をmapする時にmapに渡す関数が `Resut` を返す時に `Option<Result<T, E>>` ができてしまうと思います。通常なら `anyhow::Context` などで `None` をエラーとして扱えばいいのですが、他にも `Option` を返す計算と組み合わせてなにかをする時は `Option` 同士だと毎回エラーハンドリングしなくても上記の `Option` のイテレーターメソッドを使うと便利です。
+`Option` な値をmapする時にmapに渡す関数が `Resut` を返す時に `Option<Result<T, E>>` ができてしまうと思います。通常なら `anyhow::Context` などで `None` をエラーとして扱えばいいのですが、他にも `Option` を返す計算と組み合わせてなにかをする時は `Option` 同士だと上記の `Option` のイテレーターメソッドが使えるので毎回エラーハンドリングしなくてよくなります。
 
-そのような時に、先に中の `Result` を剥がして中身の `Err` を早期リターンしつつ `Option<T>` に直す時に便利です。`transpose` 自体は `Result<Option<T>, E>` に直すメソッドです。だいたいのアプリケーションコードでは `Result` が返り値の型になってると思うので、`Result` にさえ直せばquestion mark operator (`?`)で楽にエラーを早期リターンできます。
+そのような時に、先に中の `Result` を剥がして中身の `Err` を早期リターンしつつ `Option<T>` に直す時に `transposeが` 使えます。`transpose` 自体は `Option<Result<T, E>>` を `Result<Option<T>, E>` に直すメソッドです。だいたいのアプリケーションコードでは `Result` が返り値の型になってると思うので、`Result<Option<T>>` に直せばquestion mark operator (`?`)で楽にエラーを早期リターンできます。
 
 ```rust
 let global_allowlist = config
