@@ -34,7 +34,7 @@ rust-analyzerのサポートがあるとないとだと雲泥の差だと個人�
 absolute_paths = "warn"
 # ...
 
-# Enable all pedantic lints.
+# Enable all nursery lints.
 nursery = { level = "warn", priority = -1 }
 ```
 
