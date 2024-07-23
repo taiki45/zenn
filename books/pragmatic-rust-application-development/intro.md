@@ -8,14 +8,15 @@ title: "はじめに"
 
 - gls: https://github.com/Finatext/gls
   - リポジトリはパブリックですが、まだ内容は公にはしてないのでひっそりと公開しています。テックブログ記事を書く予定なのでご期待ください！
-  - [Platform Engineering Kaigi 2024で喋りました！](https://www.cnia.io/pek2024/sessions/2a367e04-9c4a-4784-a659-f3bbcbf12998/) [スライド](https://speakerdeck.com/taiki45/efficient-platform-for-security-and-compliance-89d1ad22-14d6-44df-ab7e-dc4ca7fb470c)
+  - [Platform Engineering Kaigi 2024で喋りました！](https://www.cnia.io/pek2024/sessions/2a367e04-9c4a-4784-a659-f3bbcbf12998/)
+  - [スライド](https://speakerdeck.com/taiki45/efficient-platform-for-security-and-compliance-89d1ad22-14d6-44df-ab7e-dc4ca7fb470c)
 - orgu: https://github.com/Finatext/orgu
   - リポジトリをパブリックにする予定ですが、まだです。GitHubのorganization-wide workflowを、AWS Lambdaやその他のプラットフォームで実現するOSSになっていて、開発したFinatextだけでなく他の組織でも役に立つソフトウェアだと思っています。こちらもテックブログ記事をご期待ください！(背水の陣)
   - リリースしました！ [ブログ記事](https://techblog.finatext.com/orgu-e3a3ad0219a8)
 
 がんばって本を書いたので、内容がおもしろい・役に立ちそうと思ったらぜひzenn上でのライクやXなどで共有してもらえるととてもうれしいです！引き続きおもしろいと思う情報発信をしていく予定なので、よければ筆者のXアカウントをフォローしてもらえるとうれしいです。
 
-https://twitter.com/taiki45
+https://x.com/taiki45
 
 執筆当時、筆者はFinatextという会社のプラットフォームチームで働いています。プラットフォームチームではツールの開発に主にGoと(最近)Rustを用いていておもしろい環境だと思います。会社自体もとてもいい会社なので、気になった方はぜひテックブログや採用情報を覗いてみてください！
 
