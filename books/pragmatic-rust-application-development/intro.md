@@ -8,6 +8,7 @@ title: "はじめに"
 
 - gls: https://github.com/Finatext/gls
   - リポジトリはパブリックですが、まだ内容は公にはしてないのでひっそりと公開しています。テックブログ記事を書く予定なのでご期待ください！
+  - [Platform Engineering Kaigi 2024で喋りました！](https://www.cnia.io/pek2024/sessions/2a367e04-9c4a-4784-a659-f3bbcbf12998/) [スライド](https://speakerdeck.com/taiki45/efficient-platform-for-security-and-compliance-89d1ad22-14d6-44df-ab7e-dc4ca7fb470c)
 - orgu: https://github.com/Finatext/orgu
   - リポジトリをパブリックにする予定ですが、まだです。GitHubのorganization-wide workflowを、AWS Lambdaやその他のプラットフォームで実現するOSSになっていて、開発したFinatextだけでなく他の組織でも役に立つソフトウェアだと思っています。こちらもテックブログ記事をご期待ください！(背水の陣)
   - リリースしました！ [ブログ記事](https://techblog.finatext.com/orgu-e3a3ad0219a8)
