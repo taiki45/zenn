@@ -3,7 +3,8 @@ title: "モノリポでGitHub Actionsで効率よくCI/CDや自動化を実装�
 emoji: "🔨"
 type: "tech"
 topics: ["github", "githubactions"]
-published: false
+published: true
+published_at: 2024-12-09 09:00
 publication_name: finatext
 ---
 
