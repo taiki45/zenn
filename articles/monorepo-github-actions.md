@@ -4,7 +4,6 @@ emoji: "🔨"
 type: "tech"
 topics: ["github", "githubactions"]
 published: true
-published_at: 2024-12-09 09:00
 publication_name: finatext
 ---
 
