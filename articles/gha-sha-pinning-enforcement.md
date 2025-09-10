@@ -3,7 +3,7 @@ title: "GitHub ActionsのSHA Pinning Enforcementを有効にするまでの道�
 emoji: "🔨"
 type: "tech"
 topics: ["github", "githubactions"]
-published: false
+published: true
 publication_name: finatext
 ---
 
